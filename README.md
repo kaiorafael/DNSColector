@@ -7,7 +7,7 @@ DNS Collector used during my PhD to track malicious and legitimate domains
 * Net::DNS::Async
 * Net::DNS
 
-# Examples Synchronous mode
+# Synchronous mode examples
 
 DNS resolutions domain `example.com` using 
 * MX-type
@@ -61,7 +61,7 @@ Resolution to obtain Answer, Auth, and Addtional sections:
     say $_ foreach (@{$syncRes->{additional}});
 ```
 
-# Examples Asynchronous mode
+# Asynchronous mode examples
 
 Asynchronous mode is quite similar to Synchronous, but full mode: `mode => full` is not currently supported.
 
