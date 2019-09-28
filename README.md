@@ -61,6 +61,12 @@ Resolution to obtain Answer, Auth, and Addtional sections:
     say $_ foreach (@{$syncRes->{additional}});
 ```
 
+For a working example using sync mode
+
+```sh
+perl examples/sync_mode.pl
+```
+
 # Asynchronous mode examples
 
 Asynchronous mode is quite similar to Synchronous, but full mode: `mode => full` is not currently supported.
@@ -103,4 +109,9 @@ Resolution to obtain Answer, Auth, and Addtional sections using Async:
         $syncRes->domain_search({qtype => "A"});
         say $_ foreach (@{$syncRes->{answer}});
     }
+```
+For a working example using async mode
+
+```sh
+perl examples/async_mode.pl
 ```
