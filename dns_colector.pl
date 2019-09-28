@@ -1,7 +1,6 @@
 use Net::DNS::Simple;
 use lib './lib';
 use DNSResolver::SyncResolution;
-use Data::Dumper;
 
 use warnings;
 use strict;
