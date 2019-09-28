@@ -73,7 +73,7 @@ sub main_code () {
             domain => $domain,
         });
         say $syncRes->domain_search(); # A-type default
-        say print $_ foreach (@{$syncRes->{answer}});
+        say $_ foreach (@{$syncRes->{answer}});
     }
 }
 
